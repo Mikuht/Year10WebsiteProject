@@ -1,0 +1,133 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(255,255,255);
+}
+header{
+    background-image: url(background.jpg);
+    background-size: 1450px 700px;
+}
+h1.title{
+    text-align: center;
+    color: #39c5bb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 80px;
+    margin: 0;
+}
+
+#menu{
+    list-style-type: none;
+    background-color: #39c5bb;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 2px 5px 10px white;
+    top: 0;
+    visibility: 0;
+    opacity: 0;
+}
+
+#navBar{
+    list-style-type: none;
+    background-color: #39c5bb;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 2px 5px 10px white;
+}
+li{
+    float: left;
+}
+.current{
+    background-color: white;
+    color: #39c5bb;
+}
+li a{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+}
+li a:hover{
+    background-color: white;
+    color: #39c5bb;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+li button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+li button:hover{
+    background: #ccc;
+}
+h3.subtopic{
+    color: #39c5bb;
+    background-color: white;
+    font-weight: bold;
+    padding-left: 35px;
+    padding-top: 10px;
+    margin: 0;
+    font-size: 30px;
+}
+figure.figure{
+    margin: 0;
+    width: 50%;
+}
+figure>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: none;
+    transition:0.6s;
+}
+figure>img:hover{
+    box-shadow:2px 2px 2px grey;
+    cursor: pointer;
+    z-index:1;
+    width: 70%;
+}
+figure>figcaption{
+    padding:10px;
+    text-align:center;
+}
+#topButton{
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: #39c5bb;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    transition: opacity 0.3s ease-out;
+    visibility: 0;
+}
+
+li input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: none;
+}
