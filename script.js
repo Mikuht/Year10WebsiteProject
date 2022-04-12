@@ -38,3 +38,12 @@ function getoffsetTop(element){
     }
     return offsetTop;
 }
+
+function highlight(text){
+    var inputText = document.getElementById("text");
+    var innerHTML = inputText.innerHTML;
+    var index = innerHTML.indexOf(text);
+    if (index >= 0) { 
+       inputText.innerHTML=innerHTML.split(text).join('<span class="highlight">'+text+'</span>');
+    }
+}

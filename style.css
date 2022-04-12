@@ -31,6 +31,10 @@ h1.title{
     opacity: 0;
 }
 
+.highlight{
+    background-color: yellow;
+}
+
 #navBar{
     list-style-type: none;
     background-color: #39c5bb;
@@ -132,5 +136,5 @@ li input[type=text] {
     border: none;
 }
 #house{
-    font-size: 24px;
+    font-size: 23px;
 }
