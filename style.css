@@ -36,7 +36,7 @@ h1.title{
     background-color: #39c5bb;
     margin: 0;
     position: relative;
-    width: 100%;
+    width: 105%;
     padding: 0;
     overflow: hidden;
     box-shadow: 2px 5px 10px white;
@@ -130,4 +130,7 @@ li input[type=text] {
     margin-top: 8px;
     font-size: 16px;
     border: none;
+}
+#house{
+    font-size: 24px;
 }
