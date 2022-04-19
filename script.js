@@ -1,3 +1,5 @@
+import * as name from "/module/particles.js"
+
 var button = document.getElementById("topButton");
 var navBar = document.getElementById("menu");
 
