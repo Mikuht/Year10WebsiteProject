@@ -39,11 +39,23 @@ function getoffsetTop(element){
     return offsetTop;
 }
 
+var last="";
+var regu = new RegExp("^[ ]+$");
+
 function highlight(text){
-    var inputText = document.getElementById("text");
-    var innerHTML = inputText.innerHTML;
-    var index = innerHTML.indexOf(text);
-    if (index >= 0) { 
-       inputText.innerHTML=innerHTML.split(text).join('<span class="highlight">'+text+'</span>');
+    if(last!="" && !regu.test(last)){
+        var rep = document.getElementById("ADDDDDD");
+        rep.outerHTML = last;
+        last="";
+    }
+    if(text!="" && !regu.test(text)){
+        var inputText = document.getElementById("text");
+        var innerHTML = inputText.innerHTML;
+        var index = innerHTML.indexOf(text);
+        light = false;
+        if (index >= 0) { 
+        inputText.innerHTML=innerHTML.split(text).join('<span class="highlight" id="ADDDDDD">'+text+'</span>');
+        last = text;
+        }
     }
 }
