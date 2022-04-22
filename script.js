@@ -42,20 +42,25 @@ function getoffsetTop(element){
 var last="";
 var regu = new RegExp("^[ ]+$");
 
-function highlight(text){
+function highlight(input){
     if(last!="" && !regu.test(last)){
-        var rep = document.getElementById("ADDDDDD");
-        rep.outerHTML = last;
+        var rep = document.getElementsByClassName("highlight");
+        console.log(rep);
+        var length = rep.length;
+        for(var i = 0; i<length; i++){
+            rep.item(0).outerHTML = last;
+        }
         last="";
     }
-    if(text!="" && !regu.test(text)){
-        var inputText = document.getElementById("text");
-        var innerHTML = inputText.innerHTML;
-        var index = innerHTML.indexOf(text);
-        light = false;
-        if (index >= 0) { 
-        inputText.innerHTML=innerHTML.split(text).join('<span class="highlight" id="ADDDDDD">'+text+'</span>');
-        last = text;
+    if(input!="" && !regu.test(input)){
+        var texts = document.getElementsByClassName("text");
+        for(var i = 0; i<texts.length; i++){
+            var innerHTML = texts.item(i).innerHTML;
+            var index = innerHTML.indexOf(input);
+            if (index >= 0) { 
+                texts.item(i).innerHTML=innerHTML.split(input).join('<span class="highlight">'+input+'</span>');
+                last = input;
+            }
         }
     }
 }

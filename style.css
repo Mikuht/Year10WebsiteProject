@@ -80,7 +80,7 @@ li button{
 li button:hover{
     background: #ccc;
 }
-h3.subtopic{
+#subtopic{
     color: #39c5bb;
     background-color: white;
     font-weight: bold;
