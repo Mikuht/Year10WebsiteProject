@@ -42,6 +42,13 @@ function getoffsetTop(element){
 var last="";
 var regu = new RegExp("^[ ]+$");
 
+document.getElementById("input").addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("submit").click();
+    }
+});
+
 function highlight(input){
     if(last!="" && !regu.test(last)){
         var rep = document.getElementsByClassName("highlight");
