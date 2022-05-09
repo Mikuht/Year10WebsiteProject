@@ -71,3 +71,71 @@ function highlight(input){
         }
     }
 }
+
+var questions={
+    quiz1:{
+        text: "Question?",
+        option: {
+            a: '1',
+            b: '2',
+            c: '3',
+        },
+        answer: 'b'   
+    },
+    quiz2:{
+        text: "Question2?",
+        option: {
+            a: '2',
+            b: '1',
+            c: '3',
+        },
+        answer: 'a'   
+    }
+};
+
+function buildQuiz(question){
+    const quiz = questions[question];
+    const answers = [];
+    for(letter in quiz["option"]){
+        answers.push(`<label><input type="radio" name="${question}" value="${letter}">${letter} :${quiz["option"][letter]}</label>`)
+    }
+    document.getElementById(question).innerHTML=`<div class="question"> ${quiz["text"]} </div><div class="answers"> ${answers.join('')} </div>`;
+}
+
+function showResult(question){
+    const quiz = questions[question];
+    const answerContainer = document.getElementById(question).querySelector('.answers');
+    const selector = `input[name=${question}]:checked`;
+    const inputAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+    if(inputAnswer == quiz["answer"]){
+        answerContainer.style.color = '#39c5bb';
+    }
+    else{
+        answerContainer.style.color = 'red';
+    }
+
+}
+
+
+var currentPage = document.title;
+
+
+//Loading Page
+
+if(currentPage == "Page1"){
+    buildQuiz("quiz1");
+    buildQuiz("quiz2");
+}
+if(currentPage == "Page2"){
+
+}
+if(currentPage == "Page3"){
+
+}
+if(currentPage == "Page4"){
+
+}
+if(currentPage == "Home"){
+
+}
