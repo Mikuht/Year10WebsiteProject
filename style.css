@@ -136,7 +136,7 @@ figure>img:hover{
     box-shadow:2px 2px 2px grey;
     cursor: pointer;
     z-index:1;
-    width: 70%;
+    width: 60%;
 }
 figure>figcaption{
     padding:10px;
