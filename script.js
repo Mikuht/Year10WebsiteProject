@@ -99,7 +99,7 @@ function buildQuiz(question){
     for(letter in quiz["option"]){
         answers.push(`<label><input type="radio" name="${question}" value="${letter}">${letter} :${quiz["option"][letter]}</label>`)
     }
-    document.getElementById(question).innerHTML=`<div class="question"> ${quiz["text"]} </div><div class="answers"> ${answers.join('')} </div>`;
+    document.getElementById(question).innerHTML=`<div class="question text"> ${quiz["text"]} </div><div class="answers"> ${answers.join('')} </div>`;
 }
 
 function showResult(question){
