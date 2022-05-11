@@ -5,8 +5,38 @@ body{
     background-color: rgb(255,255,255);
 }
 header{
-    background-image: url(background.jpg);
+    /* background-image: url(background.jpg); */
     background-size: 1450px 700px;
+}
+#titleH{
+    background: rgba(255,255,255,0.20) url(https://c4.wallpaperflare.com/wallpaper/485/783/587/mechanical-keyboard-keyboards-rgb-pc-gaming-wallpaper-preview.jpg);
+    background-blend-mode:soft-light;
+    background-size: cover;
+    background-position: center;
+}
+#title1{
+    background: rgba(0,0,0,0.39) url(https://www.1421.consulting/wp-content/uploads/2019/07/China-Gaming-1.jpg);
+    background-blend-mode:darken;
+    background-size: cover;
+    background-position: center;
+}
+#title2{
+    background: rgba(255,255,255,0.30) url(https://content.fortune.com/wp-content/uploads/2019/11/China-Video-Games-Curfew.jpg);
+    background-blend-mode:soft-light;
+    background-size: cover;
+    background-position: center;
+}
+#title3{
+    background: rgba(0,0,0,0.30) url('https://cdn.vox-cdn.com/thumbor/Uqgwo37QNsCp1M1_gy7nbASHYtY=/0x0:1920x1080/1200x480/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/70528625/screenshot8.0.jpeg');
+    background-blend-mode:darken;
+    background-size: cover;
+    background-position: center;
+}
+#title4{
+    background: rgba(0,0,0,0.30) url('https://cdn.vox-cdn.com/thumbor/rnarjLd4Wk1q6AhQtj9woe6thdM=/0x0:1600x900/1320x0/filters:focal(0x0:1600x900):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/23243399/ss_7b635ae1ca6d88b52fca183407f06cfd94850b26.jpeg');
+    background-blend-mode:darken;
+    background-size: cover;
+    background-position: center;
 }
 h1.title{
     text-align: center;
@@ -15,6 +45,7 @@ h1.title{
     padding-bottom: 50px;
     font-size: 80px;
     margin: 0;
+    -webkit-text-stroke: 2px #e3e3e3;
 }
 
 #menu{
