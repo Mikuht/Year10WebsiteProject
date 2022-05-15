@@ -5,7 +5,6 @@ body{
     background-color: rgb(255,255,255);
 }
 header{
-    /* background-image: url(background.jpg); */
     background-size: 1450px 700px;
 }
 #titleH{
@@ -48,6 +47,9 @@ h1.title{
     -webkit-text-stroke: 2px #e3e3e3;
 }
 
+#house{
+    font-size: 23px;
+}
 #menu{
     list-style-type: none;
     background-color: #39c5bbcc;
@@ -61,11 +63,6 @@ h1.title{
     visibility: 0;
     opacity: 0;
 }
-
-.highlight{
-    background-color: yellow;
-}
-
 #navBar{
     list-style-type: none;
     background-color: #39c5bbcc;
@@ -111,6 +108,16 @@ li button{
 li button:hover{
     background: #ccc;
 }
+li input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: none;
+}
+.highlight{
+    background-color: yellow;
+}
+
 #subtopic{
     color: #39c5bbcc;
     font-weight: bold;
@@ -124,9 +131,18 @@ li button:hover{
     padding-right: 10%;
     font-size: 18px;
 }
+h2{
+    font-size: 22px;
+    text-decoration: underline #39c5bbcc 3px;
+}
+.part{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 p{
     text-align: justify;
 }
+
 figure.figure{
     padding: 2%;
 }
@@ -134,7 +150,6 @@ figure>img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
     box-shadow: none;
     transition:0.6s;
 }
@@ -148,6 +163,13 @@ figure>figcaption{
     padding-top:10px;
     text-align:center;
 }
+#f1{
+    width: 300px;
+}
+#f2{
+    width: 400px;
+}
+
 #topButton{
     opacity: 0;
     position: fixed;
@@ -165,25 +187,6 @@ figure>figcaption{
     padding: 15px;
     transition: opacity 0.3s ease-out;
     visibility: 0;
-}
-
-li input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 16px;
-    border: none;
-}
-#house{
-    font-size: 23px;
-}
-
-#particles-js{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 }
 
 .quiz{
@@ -206,22 +209,23 @@ li input[type=text] {
     background-color: #eeeeee;
     box-shadow: 1px 1px 1px grey;
 }
+
 .footnote{
     background-color: #39c5bbcc;
+}
+h4{
+    font-size: 30px;
 }
 .foot_content{
     padding-left: 3.9%;
     padding-right: 3.9%;
 }
-h4{
-    font-size: 30px;
-}
 
-h2{
-    font-size: 22px;
-    text-decoration: underline #39c5bbcc 3px;
-}
-.part{
-    padding-top: 5px;
-    padding-bottom: 5px;
+#particles-js{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
