@@ -205,3 +205,18 @@ li input[type=text] {
     background-color: #eeeeee;
     box-shadow: 1px 1px 1px grey;
 }
+.footnote{
+    background-color: #39c5bb90;
+}
+.foot_content{
+    padding-left: 3.9%;
+    padding-right: 3.9%;
+}
+h4{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 22px;
+    text-decoration: underline #39c5bb 3px;
+}
