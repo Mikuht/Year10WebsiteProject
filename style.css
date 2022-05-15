@@ -115,10 +115,15 @@ li button:hover{
     color: #39c5bb;
     background-color: white;
     font-weight: bold;
-    padding-left: 35px;
+    padding-left: 10%;
     padding-top: 10px;
     margin: 0;
     font-size: 30px;
+}
+.main{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 18px;
 }
 figure.figure{
     margin: 0;
@@ -184,7 +189,7 @@ li input[type=text] {
     background-color: rgba(0,0,0,0.1);
     padding: 10px;
     margin-inline: 60%;
-    margin-left: 3.9%;
+    margin-left: 0%;
 }
 .quiz button{
     color: #39c5bb;
