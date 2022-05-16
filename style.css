@@ -140,7 +140,7 @@ h2{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-p{
+.part>p{
     text-align: justify;
 }
 
@@ -179,10 +179,30 @@ figure>figcaption{
 #f5{
     width:100%;
 }
-.fig_row::after{
+
+.column{
+    float: left;
+    width: 48%;
+}
+.row::after{
     content: "";
     clear: both;
     display: table;
+}
+
+.footnote{
+    background-color: #39c5bbcc;
+}
+h4{
+    font-size: 30px;
+    margin: 0;
+}
+.foot_content{
+    padding-left: 3.9%;
+    padding-right: 3.9%;
+}
+.foot_content>.row>.column>p{
+    word-wrap: break-word;
 }
 
 #topButton{
@@ -223,17 +243,6 @@ figure>figcaption{
 .quiz button:active{
     background-color: #eeeeee;
     box-shadow: 1px 1px 1px grey;
-}
-
-.footnote{
-    background-color: #39c5bbcc;
-}
-h4{
-    font-size: 30px;
-}
-.foot_content{
-    padding-left: 3.9%;
-    padding-right: 3.9%;
 }
 
 #particles-js{
