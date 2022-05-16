@@ -118,24 +118,23 @@ function showResult(question){
 }
 
 
-var currentPage = document.title;
-
+var currentPage = window.location.pathname.split('/').pop();
 
 //Loading Page
 
-if(currentPage == "Page1"){
+if(currentPage == "Page1.html"){
     buildQuiz("quiz1");
     buildQuiz("quiz2");
 }
-if(currentPage == "Page2"){
+if(currentPage == "Page2.html"){
 
 }
-if(currentPage == "Page3"){
+if(currentPage == "Page3.html"){
 
 }
-if(currentPage == "Page4"){
+if(currentPage == "Page4.html"){
 
 }
-if(currentPage == "Home"){
+if(currentPage == "Home.html"){
 
 }
