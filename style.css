@@ -9,7 +9,7 @@ header{
     background-size: 1450px 700px;
 }
 #titleH{
-    background: rgba(0,0,0,0.05) url('https://c4.wallpaperflare.com/wallpaper/485/783/587/mechanical-keyboard-keyboards-rgb-pc-gaming-wallpaper-preview.jpg');
+    background: rgba(0,0,0,0.15) url('https://c4.wallpaperflare.com/wallpaper/485/783/587/mechanical-keyboard-keyboards-rgb-pc-gaming-wallpaper-preview.jpg');
     background-blend-mode:darken;
     background-size: cover;
     background-position: center;
@@ -21,7 +21,7 @@ header{
     background-position: center;
 }
 #title2{
-    background: rgba(0,0,0,0.09) url('https://content.fortune.com/wp-content/uploads/2019/11/China-Video-Games-Curfew.jpg');
+    background: rgba(0,0,0,0.10) url('https://content.fortune.com/wp-content/uploads/2019/11/China-Video-Games-Curfew.jpg');
     background-blend-mode:darken;
     background-size: cover;
     background-position: center;
@@ -169,6 +169,20 @@ figure>figcaption{
 }
 #f2{
     width: 400px;
+}
+#f3{
+    width:100%;
+}
+#f4{
+    width:100%;
+}
+#f5{
+    width:100%;
+}
+.fig_row::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #topButton{
