@@ -194,8 +194,9 @@ figure>figcaption{
     background-color: #39c5bbcc;
 }
 h4{
-    font-size: 30px;
+    font-size: 20px;
     margin: 0;
+    padding-top: 5px;
 }
 .foot_content{
     padding-left: 3.9%;
@@ -203,6 +204,18 @@ h4{
 }
 .foot_content>.row>.column>p{
     word-wrap: break-word;
+    font-size: 13px;
+    margin:0;
+    padding-top: 3px;
+    text-indent: -26px;
+    padding-left: 26px;
+}
+#credit{
+    font-size: 11px;
+    color: #ddd;
+    padding-top:10px;
+    padding-bottom: 5px;
+    text-align: center;
 }
 
 #topButton{
@@ -227,8 +240,9 @@ h4{
 .quiz{
     background-color: rgba(0,0,0,0.1);
     padding: 10px;
-    margin-inline: 60%;
+    margin-inline: 50%;
     margin-left: 0%;
+    margin-bottom: 10px;
 }
 .quiz button{
     color: #39c5bbcc;
@@ -243,6 +257,14 @@ h4{
 .quiz button:active{
     background-color: #eeeeee;
     box-shadow: 1px 1px 1px grey;
+}
+.question{
+    font-size: 19.5px;
+    padding-bottom: 3px;
+}
+.checkButton{
+    margin-top: 3px;
+    padding: 4px;
 }
 
 #particles-js{

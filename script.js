@@ -74,22 +74,40 @@ function highlight(input){
 
 var questions={
     quiz1:{
-        text: "Question?",
+        text: "Video Gamer Population in China, 2022?",
         option: {
-            a: '1',
-            b: '2',
-            c: '3',
+            a: '390 million',
+            b: '720 million',
+            c: '1.02 billion',
         },
         answer: 'b'   
     },
     quiz2:{
-        text: "Question2?",
+        text: "The Highest Earning Video Game Enterprise in China, 2022?",
         option: {
-            a: '2',
-            b: '1',
-            c: '3',
+            a: 'Tencent',
+            b: 'NetEase',
+            c: 'miHoYo',
         },
         answer: 'a'   
+    },
+    quiz3:{
+        text: "The Highest Earning Video Game in China, 2022?",
+        option: {
+            a: 'PUBG Mobile',
+            b: 'Genshin Impact',
+            c: 'Honor of Kings',
+        },
+        answer: 'c'   
+    },
+    quiz4:{
+        text: "The game made in China?",
+        option: {
+            a: 'Sifu',
+            b: 'Dynasty Warriors 2',
+            c: 'Showa American Story',
+        },
+        answer: 'c'   
     }
 };
 
@@ -97,7 +115,7 @@ function buildQuiz(question){
     const quiz = questions[question];
     const answers = [];
     for(letter in quiz["option"]){
-        answers.push(`<label><input type="radio" name="${question}" value="${letter}">${letter} :${quiz["option"][letter]}</label>`)
+        answers.push(`<label><input type="radio" name="${question}" value="${letter}">${letter}: ${quiz["option"][letter]}</label>&emsp;`)
     }
     document.getElementById(question).innerHTML=`<div class="question text"> ${quiz["text"]} </div><div class="answers"> ${answers.join('')} </div>`;
 }
@@ -122,9 +140,14 @@ var currentPage = window.location.pathname.split('/').pop();
 
 //Loading Page
 
-if(currentPage == "Page1.html"){
+if(currentPage == "Home.html"){
     buildQuiz("quiz1");
     buildQuiz("quiz2");
+    buildQuiz("quiz3");
+    buildQuiz("quiz4");
+}
+if(currentPage == "Page1.html"){
+    
 }
 if(currentPage == "Page2.html"){
 
@@ -133,8 +156,5 @@ if(currentPage == "Page3.html"){
 
 }
 if(currentPage == "Page4.html"){
-
-}
-if(currentPage == "Home.html"){
 
 }
